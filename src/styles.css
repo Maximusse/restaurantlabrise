@@ -1,1 +1,260 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'gill';
+    src: url('assets/fonts/GILSANUB.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'krinkes';
+    src: url('assets/fonts/krinkes.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clear{
+    clear: both;
+}
+
+
+body{
+    background: url('assets/imgs/backs/background.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider-zone ul.indicators{
+    bottom: 60px !important;
+    z-index: 100 !important; 
+}
+
+.slider-zone ul.indicators .indicator-item {
+    background-color: #666666;
+    border: 3px solid #ffffff;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.slider-zone ul.indicators .indicator-item.active {
+    background-color: #F44336 !important;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+
+        /* navbar responsive style */
+        .title-one-content h1{
+            font-size: 3rem !important;
+            line-height: 100px !important;
+        }
+
+        .title-one-content h4{
+            font-size: 8px !important;
+            left: 43% !important;
+            top: 59% !important;
+        }
+        /* //navbar responsive style */
+
+        /* slider-zone */
+        .slider-zone .container{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
+        }
+
+        .slider-zone .caption-one  h1{
+            font-size: 2rem !important;
+            text-align: center;
+        }
+
+        .slider-zone .caption-two  h1{
+            font-size: 2rem !important;
+            text-align: center;
+        }
+
+        .slider-zone .caption-two  h2{
+            font-size: 2rem !important;
+            text-align: center;
+        }
+
+        .slider-zone .caption-three  h1{
+            font-size: 2rem !important;
+            text-align: center;
+        }
+
+        .slider-zone .caption h5{
+            padding: 0 !important;
+            text-align: center;
+            font-size: 13px !important;
+        }
+
+        .slider-zone .caption h5:before,.slider-zone .caption h5:after{
+            width: 3%;
+        }
+
+        .slider-zone .caption h5:after{
+            left: 93% !important;
+        }
+
+        /* //slider-zone */
+
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+    and (max-width : 320px) {
+        /* navbar responsive style */
+        .title-one-content h1{
+            font-size: 3rem !important;
+            line-height: 100px !important;
+        }
+        /* //navbar responsive style */
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* navbar responsive style */
+    .title-one-content h1{
+        font-size: 4rem !important;
+        line-height: 105px !important;
+    }
+    .title-one-content h4{
+        font-size: 8px !important;
+        left: 45% !important;
+        top: 59% !important;
+    }
+     /* //navbar responsive style */
+
+    /* slider-zone */
+    .slider-zone .container{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+
+    .slider-zone .caption-one  h1{
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    .slider-zone .caption-two  h1{
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    .slider-zone .caption-two  h2{
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    .slider-zone .caption-three  h1{
+        font-size: 3rem !important;
+        text-align: center;
+    }
+
+    .slider-zone .caption h5{
+        padding: 0 !important;
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    .slider-zone .caption h5:before,.slider-zone .caption h5:after{
+        width: 3%;
+    }
+
+    .slider-zone .caption h5:after{
+        left: 93% !important;
+    }
+    /* //slider-zone */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+     /* navbar responsive style */
+    .title-one-content h1{
+        font-size: 4rem !important;
+        line-height: 110px !important;
+    }
+    .title-one-content h4{
+        font-size: 8px !important;
+        left: 46% !important;
+        top: 59% !important;
+    }
+     /* //navbar responsive style */
+
+    /* slider-zone */
+    .slider-zone .caption-one  h1{
+        font-size: 3rem !important;
+        
+    }
+
+    .slider-zone .caption-two  h1{
+        font-size: 3rem !important;
+        
+    }
+
+    .slider-zone .caption-two  h2{
+        font-size: 3rem !important;
+        
+    }
+
+    .slider-zone .caption-three  h1{
+        font-size: 3rem !important;
+        
+    }
+
+    .slider-zone .caption h5{
+        padding: 0 !important;
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    .slider-zone .caption h5:before,.slider-zone .caption h5:after{
+        width: 3%;
+    }
+
+    .slider-zone .caption h5:after{
+        left: 93% !important;
+    }
+
+    /* // slider-zone */
+}
+
+@media (min-width: 992px) and (max-width:1125px) {
+     /* navbar responsive style */
+    .li-animate a{
+        font-size: 17px !important;
+    }
+    /* //navbar responsive style */
+
+    /* slider-zone */
+    .slider-zone .caption h5{
+        padding: 0 !important;
+        text-align: center;
+        font-size: 13px !important;
+    }
+
+    .slider-zone .caption h5:before,.slider-zone .caption h5:after{
+        width: 3%;
+    }
+
+    .slider-zone .caption h5:after{
+        left: 93% !important;
+    }
+
+    /* //slider-zone */
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+
