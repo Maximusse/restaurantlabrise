@@ -22,12 +22,15 @@
         "styles.css",
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/materialize-css/dist/css/materialize.css",
-        "../node_modules/wowjs/css/libs/animate.css"
+        "../node_modules/wowjs/css/libs/animate.css",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+        "../node_modules/owl.carousel/dist/assets/owl.theme.default.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
         "../node_modules/materialize-css/dist/js/materialize.js",
-        "../node_modules/wowjs/dist/wow.js"
+        "../node_modules/wowjs/dist/wow.js",
+        "../node_modules/owl.carousel/dist/owl.carousel.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -18,14 +18,14 @@ export class NavbarComponent implements OnInit {
 
       $(window).scroll(function(){
         let posScroll = $(document).scrollTop();
-          if(posScroll >= 250){ 
+          if(posScroll >= 117){ 
             $('#navbar-two').fadeIn();
           }else {
             $('#navbar-two').fadeOut();
           }
       });
 
-      
+
 
     })
 

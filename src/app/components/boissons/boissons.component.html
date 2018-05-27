@@ -1,0 +1,254 @@
+<ng-progress [positionUsing]="'marginLeft'" [direction]="'leftToRightIncreased'" [color]="'#fff'" [trickleSpeed]="1000" [thick]="true"
+  [ease]="'linear'"></ng-progress>
+
+<!-- slider-zone  -->
+<div class="row boisson-slider-zone slider-zone">
+  <div class="container">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="../assets/imgs/slider/slide-eleven.jpg" alt="slider images">
+          <div class="caption caption-one left-align">
+
+          </div>
+        </li>
+        <li>
+          <img src="../assets/imgs/slider/slide-twelve.jpg" alt="slider images">
+          <div class="caption caption-two right-align">
+
+          </div>
+        </li>
+        <li>
+          <img src="../assets/imgs/slider/slide-firteen.jpg" alt="slider images">
+          <div class="caption caption-three center-align">
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- //slider-zone  -->
+
+<!-- boisson-body-content-one -->
+<div class="row boisson-body-content-one">
+  <div class="col l12 m12 s12 bbco-el-one">
+    <h3 class="wow fadeInDown">Liste des boissons</h3>
+  </div>
+  <div class="col l12 m12 s12 bbco-el-two">
+    <h1 class="wow fadeInUp">Découvrez notre gamme de boisson</h1>
+  </div>
+</div>
+
+<!-- //boisson-body-content-one -->
+
+<!-- boisson-body-content-two -->
+<div class="row boisson-body-content-two">
+  <div class="boisson-content">
+    <div class="col l12 m12 s12 para1">
+      <div></div>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Boissons</h3>
+      <ul *ngFor="let boissonsS of boissons_s">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{boissonsS.name}}
+          <span class="boisson-block-price">{{boissonsS.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Boissons Chaudes</h3>
+      <ul *ngFor="let boissonsC of boissons_c">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{boissonsC.name}}
+          <span class="boisson-block-price">{{boissonsC.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l7 m7 s12 boisson-block">
+      <h3 class="wow fadeInUp">Boissons Energisantes</h3>
+      <ul *ngFor="let boissonsE of boissons_e">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{boissonsE.name}}
+          <span class="boisson-block-price">{{boissonsE.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l5 m5 s12 boisson-block">
+      <h3 class="wow fadeInUp">Boissons Digestives</h3>
+      <ul *ngFor="let digestifs of digestifs">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{digestifs.name}}
+          <span class="boisson-block-price">{{digestifs.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Sirops</h3>
+      <ul *ngFor="let sirops of sirops">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{sirops.name}}
+          <span class="boisson-block-price">{{sirops.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Jus</h3>
+      <ul *ngFor="let jus of jus">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{jus.name}}
+          <span class="boisson-block-price">{{jus.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para2">
+      <div></div>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Cocktails</h3>
+      <ul *ngFor="let cocktailsB of cocktails_b">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{cocktailsB.name}}
+          <span class="boisson-block-price">{{cocktailsB.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Cannettes de sucrerie</h3>
+      <ul *ngFor="let cannettesS of cannettes_s">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{cannettesS.name}}
+          <span class="boisson-block-price">{{cannettesS.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Cannettes de bière</h3>
+      <ul *ngFor="let cannettesB of cannettes_b">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{cannettesB.name}}
+          <span class="boisson-block-price">{{cannettesB.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Eaux Minerales</h3>
+      <ul *ngFor="let eauxM of eaux_m">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{eauxM.name}}
+          <span class="boisson-block-price">{{eauxM.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para3">
+      <div></div>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Appéritifs</h3>
+      <ul *ngFor="let apperitifs of apperitifs">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{apperitifs.name}}
+          <span class="boisson-block-price">{{apperitifs.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Bière</h3>
+      <ul *ngFor="let biere of bieres">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{biere.name}}
+          <span class="boisson-block-price">{{biere.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Cognac</h3>
+      <ul *ngFor="let cognac of cognac">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{cognac.name}}
+          <span class="boisson-block-price">{{cognac.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Whisky</h3>
+      <ul *ngFor="let whisky of whisky_1">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{whisky.name}}
+          <span class="boisson-block-price">{{whisky.price}} Frcs</span>
+        </li>
+      </ul>
+      <ul *ngFor="let whisky of whisky_2">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{whisky.name}}
+          <span class="boisson-block-price">{{whisky.price}} Frcs</span>
+        </li>
+      </ul>
+      <ul *ngFor="let whisky of whisky_3">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{whisky.name}}
+          <span class="boisson-block-price">{{whisky.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para4">
+      <div></div>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Liqueurs</h3>
+      <ul *ngFor="let liqueur of liqueurs">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{liqueur.name}}
+          <span class="boisson-block-price">{{liqueur.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Gins</h3>
+      <ul *ngFor="let gins of gins">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{gins.name}}
+          <span class="boisson-block-price">{{gins.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 boisson-block">
+      <h3 class="wow fadeInUp">Rhums</h3>
+      <ul *ngFor="let rhums of rhums">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{rhums.name}}
+          <span class="boisson-block-price">{{rhums.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para5">
+      <div></div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- //boisson-body-content-two -->

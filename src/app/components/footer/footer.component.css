@@ -1,0 +1,33 @@
+.page-footer{
+    background: transparent !important;
+}
+
+.page-footer .row{
+    margin-bottom: 2px !important;
+}
+
+.footer-copyright h5, .footer-one h5{
+    margin: 0 !important;
+    font-family: PAPYRUS;
+    text-align: center;
+}
+
+.footer-one h5{
+    line-height: 40px;
+    font-size: 13px;
+
+}
+
+.footer-copyright h5{
+    line-height: 56px;
+    font-size: 11px;
+    
+}
+
+.footer-copyright .container{
+    border-top: solid 1px #fff;
+}
+
+.footer-copyright h5 > span{
+    color: #b3092f;
+}

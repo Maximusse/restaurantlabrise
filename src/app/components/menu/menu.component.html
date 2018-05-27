@@ -1,0 +1,229 @@
+<ng-progress
+[positionUsing]="'marginLeft'"
+[direction]="'leftToRightIncreased'"
+[color]="'#fff'"
+[trickleSpeed]="1000" 
+[thick]="true" 
+[ease]="'linear'"
+></ng-progress>
+
+<!-- slider-zone  -->
+<div class="row menu-slider-zone slider-zone">
+  <div class="container">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="../assets/imgs/slider/slide-five.jpg" alt="slider images">
+          <div class="caption caption-one left-align">
+            <h5>
+              Des garnitures
+            </h5>
+            <h1>
+              Parfaitement cuisinées rendant chaque bouché simplement alléchante
+            </h1>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/imgs/slider/slide-four.jpg" alt="slider images">
+          <div class="caption caption-two right-align">
+            <h1>
+              pizzas
+            </h1>
+            <h2>
+              Une de nos spécialité.Un délice pour un repas en commun.
+            </h2>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/imgs/slider/slide-seven.jpg" alt="slider images">
+          <div class="caption caption-three center-align">
+            <h1 class="h1-menu-slider">
+              Nos délicieux sorbets
+            </h1>
+            <h2>
+              Découvrez une multitude de parfum à vous combler de bonheur.
+            </h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- //slider-zone  -->
+
+<!-- Menu-one -->
+<div class="row menu-one">
+  <h2 class="liste-plats-title wow fadeInDown">Liste des plats</h2>
+  <h1 class="menu-title wow fadeInUp">Menu</h1>
+  <div class="menu-one-content">
+    <div class="col l12 m12 s12 img-zone-one">
+      <img class="wow fadeInUp" src="../assets/imgs/other/p1.png" alt="Images tatoo">
+      <img class="wow fadeInUp" data-wow-delay="500ms" src="../assets/imgs/other/p2.png" alt="Images tatoo">
+      <img class="wow fadeInUp" data-wow-delay="700ms" src="../assets/imgs/other/p3.png" alt="Images tatoo">
+      <img class="wow fadeInUp" data-wow-delay="900ms" src="../assets/imgs/other/p4.png" alt="Images tatoo">
+    </div>
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Entrées Froides</h3>
+      <ul *ngFor="let entreesFroides of entrees_f">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{entreesFroides.titre}}
+          <span class="menu-block-price">{{entreesFroides.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Entrées Chaudes</h3>
+      <ul *ngFor="let entreesChaudes of entrees_c">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{entreesChaudes.titre}}
+          <span class="menu-block-price">{{entreesChaudes.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para1">
+      <div></div>
+    </div>
+
+    <div class="col l7 m12 s12 menu-block">
+      <h3 class="wow fadeInUp">Sandwishs</h3>
+      <ul *ngFor="let sandwish of sandwish">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{sandwish.titre}}
+          <span class="menu-block-price">{{sandwish.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l5 m12 s12 menu-block">
+      <h3 class="wow fadeInUp">Potages</h3>
+      <ul *ngFor="let potage of potages">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{potage.titre}}
+          <span class="menu-block-price">{{potage.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Garnitures</h3>
+      <ul *ngFor="let garniture of garnitures">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{garniture.titre}}
+          <span class="menu-block-price">{{garniture.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Pates</h3>
+      <ul *ngFor="let pate of pates">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{pate.titre}}
+          <span class="menu-block-price">{{pate.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para2">
+      <div></div>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Africaines</h3>
+      <ul *ngFor="let africains of africaines">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{africains.titre}}
+          <span class="menu-block-price">{{africains.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Chinoises</h3>
+      <ul *ngFor="let chinois of chinoises">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{chinois.titre}}
+          <span class="menu-block-price">{{chinois.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Viandes</h3>
+      <ul *ngFor="let viande of viandes">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{viande.titre}}
+          <span class="menu-block-price">{{viande.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l6 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Volailles</h3>
+      <ul *ngFor="let volaille of volailles">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{volaille.titre}}
+          <span class="menu-block-price">{{volaille.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 menu-block">
+      <h3 class="wow fadeInUp">Poissons</h3>
+      <ul *ngFor="let poisson of poissons">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{poisson.titre}}
+          <span class="menu-block-price">{{poisson.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para3">
+      <div></div>
+    </div>
+
+    <div class="col l5 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Désserts Glacés</h3>
+      <ul *ngFor="let dessert_glace of dessert_glaces">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{dessert_glace.titre}}
+          <span class="menu-block-price">{{dessert_glace.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l5 m6 s12 menu-block">
+      <h3 class="wow fadeInUp">Désserts Sorbets</h3>
+      <ul *ngFor="let dessert_sorbet of dessert_sorbets">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{dessert_sorbet.titre}}
+          <span class="menu-block-price">{{dessert_sorbet.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para4">
+      <div></div>
+    </div>
+
+    <div class="col l9 offset-l2 m12 s12 menu-block">
+      <h3 class="wow fadeInUp">Pizzas</h3>
+      <ul *ngFor="let pizza of pizzas">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{pizza.titre}}
+          <span class="menu-block-price">{{pizza.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l12 m12 s12 para5">
+            <div></div>
+          </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!-- //Menu-one -->

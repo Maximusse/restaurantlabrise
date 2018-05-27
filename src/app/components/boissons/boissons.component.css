@@ -1,0 +1,131 @@
+/* boisson-body-content-one */
+.boisson-body-content-one{
+    margin: 0;
+}
+
+.boisson-content{
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.bbco-el-one h3, .bbco-el-two h1{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.boisson-body-content-one h3{
+    font-family: PAPYRUS;
+    font-size: 15px;
+    line-height: 70px;
+    
+}
+
+.boisson-body-content-one h1{
+    font-family: krinkes;
+    font-size: 3rem;
+    line-height: 80px;
+    position: relative;
+
+}
+
+.boisson-body-content-one h1:before{
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 10%;
+    height: 1px;
+    bottom: 0;
+    left: 45%;
+}
+
+
+/* // boisson-body-content-one */
+
+/* boissons-body-content-two */
+.boisson-body-content-two{
+    margin: 0;
+
+}
+
+.para1{
+    background-image: url('../../../assets/imgs/other/o5.jpg') ;
+}
+
+.para2{
+    background-image: url('../../../assets/imgs/other/o6.jpg') ;
+}
+
+.para3{
+    background-image: url('../../../assets/imgs/other/o7.jpg') ;
+}
+
+.para4{
+    background-image: url('../../../assets/imgs/other/o8.jpg') ;
+}
+
+
+.para5{
+    background-image: url('../../../assets/imgs/other/o9.jpg') ;
+}
+
+.para1,.para2,.para3,.para4,.para5{
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.para1 div,.para2 div,.para3 div,.para4 div,.para5 div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.boisson-block h3{
+    margin: 0;
+    font-family: PAPYRUS;
+    color: #e41f31;
+    font-size: 21px;
+    font-weight: bolder;
+    line-height: 70px;
+}
+
+.boisson-block ul{
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+.boisson-block ul li{
+    line-height: 30px;
+    font-family: PAPYRUS;
+    font-size: 15px;
+}
+
+.boisson-block ul li:hover{
+    cursor: pointer;
+    color: #e41f31;
+    transition: 500ms;
+    font-size: 17px;
+}
+
+.boisson-block ul li .fa{
+    color: #e41f31;
+}
+
+.boisson-block-price{
+    float: right;
+}
+
+
+
+
+/* //boissons-body-content-two */
