@@ -4,6 +4,8 @@ import { WOW } from 'wowjs/dist/wow.min';
 
 import { ServiceService } from '../../services/service.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',

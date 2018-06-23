@@ -580,6 +580,10 @@ export class ServiceService {
     return this.boissons_e;
   }
 
+  getBoissonsPepsi(){
+    return this.boissons_p;
+  }
+
   getDisgestifs(){
     return this.digestifs;
   }

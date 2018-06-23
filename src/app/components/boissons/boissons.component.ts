@@ -43,6 +43,7 @@ export class BoissonsComponent implements OnInit {
     this.boissons_s = this.boissonsService.getBoissonsSolibra();
     this.boissons_c = this.boissonsService.getBoissonsChaudes();
     this.boissons_e = this.boissonsService.getBoissonsEnergi();
+    this.boissons_p = this.boissonsService.getBoissonsPepsi();
     this.digestifs = this.boissonsService.getDisgestifs();
     this.sirops = this.boissonsService.getSirops();
     this.jus = this.boissonsService.getJus();

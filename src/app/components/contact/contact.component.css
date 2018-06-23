@@ -78,6 +78,17 @@
     font-size: 18px;
 }
 
+.face{
+    text-decoration: none;
+    color: #ec3961;
+}
+
+.face:hover{
+    color: #334cc5;
+    transition: 500ms;
+}
+
+
 /* //contact-content-two */
 
 /* separator*/

@@ -50,7 +50,7 @@
     </div>
 
     <div class="col l6 m6 s12 boisson-block">
-      <h3 class="wow fadeInUp">Boissons</h3>
+      <h3 class="wow fadeInUp">Boissons SOLIBRA</h3>
       <ul *ngFor="let boissonsS of boissons_s">
         <li class="wow fadeInUp">
           <span class="fa fa-cutlery"></span> {{boissonsS.name}}
@@ -70,7 +70,7 @@
     </div>
 
     <div class="col l7 m7 s12 boisson-block">
-      <h3 class="wow fadeInUp">Boissons Energisantes</h3>
+      <h3 class="wow fadeInUp">Boissons Energétiques</h3>
       <ul *ngFor="let boissonsE of boissons_e">
         <li class="wow fadeInUp">
           <span class="fa fa-cutlery"></span> {{boissonsE.name}}
@@ -89,7 +89,17 @@
       </ul>
     </div>
 
-    <div class="col l6 m6 s12 boisson-block">
+    <div class="col l4 m4 s12 boisson-block">
+      <h3 class="wow fadeInUp">Boissons PEPSI</h3>
+      <ul *ngFor="let boissonP of boissons_p">
+        <li class="wow fadeInUp">
+          <span class="fa fa-cutlery"></span> {{boissonP.name}}
+          <span class="boisson-block-price">{{boissonP.price}} Frcs</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col l4 m4 s12 boisson-block">
       <h3 class="wow fadeInUp">Sirops</h3>
       <ul *ngFor="let sirops of sirops">
         <li class="wow fadeInUp">
@@ -99,8 +109,8 @@
       </ul>
     </div>
 
-    <div class="col l6 m6 s12 boisson-block">
-      <h3 class="wow fadeInUp">Jus</h3>
+    <div class="col l4 m4 s12 boisson-block">
+      <h3 class="wow fadeInUp">Jus de fruits frais</h3>
       <ul *ngFor="let jus of jus">
         <li class="wow fadeInUp">
           <span class="fa fa-cutlery"></span> {{jus.name}}
@@ -114,7 +124,7 @@
     </div>
 
     <div class="col l6 m6 s12 boisson-block">
-      <h3 class="wow fadeInUp">Cocktails</h3>
+      <h3 class="wow fadeInUp">Cocktails de la Brise</h3>
       <ul *ngFor="let cocktailsB of cocktails_b">
         <li class="wow fadeInUp">
           <span class="fa fa-cutlery"></span> {{cocktailsB.name}}
@@ -168,7 +178,7 @@
     </div>
 
     <div class="col l6 m6 s12 boisson-block">
-      <h3 class="wow fadeInUp">Bière</h3>
+      <h3 class="wow fadeInUp">Bières</h3>
       <ul *ngFor="let biere of bieres">
         <li class="wow fadeInUp">
           <span class="fa fa-cutlery"></span> {{biere.name}}

@@ -166,6 +166,19 @@
     line-height: 70px;
 }
 
+.menu-block h5{
+    margin: 0;
+    font-family: PAPYRUS;
+    color: #666464;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 70px;
+}
+
+.menu-block h5 > span{
+    color: #e41f31;
+}
+
 .menu-block ul{
     margin: 0;
     display: block;
